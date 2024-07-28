@@ -1,0 +1,39 @@
+.slideshow{
+    background-color: lightpink;
+    display: flex;
+    
+    border: 0px solid black;
+    
+    height: 600px;
+    width: 7500px;
+
+   
+    
+    position: relative;
+
+    animation-name: slider;
+    animation-duration: 10s;
+    
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes slider{
+    0%{left: 0px;}
+    20%{left: -1500px;}
+    40%{left: -3000px;}
+    60%{left: -4500px;}
+    80%{left: -6000px;}
+    100%{left: -7500px;}
+}
+
+.slideshow .slide img{
+    width: 1500px;
+}
+
+
+.container{
+    width: 1500px;
+    border:  1px solid black;
+    overflow: hidden;
+}
